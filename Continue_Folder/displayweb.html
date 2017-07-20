@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Display Web</title>
+</head>
+<style>
+#top
+{
+	height:60px;
+	background-color:#FFF;
+	
+}
+
+#top
+{
+	height:60px;
+	background-color:#FFF;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+</style>
+
+<body >
+
+<div>
+<div >
+<div id="top">
+<img src="images/12345.png">
+
+</div>
+
+<br />
+<br />
+<hr>
+</div>
+
+<div align="center" style="margin-top:5px;margin-bottom:5px;">
+<script>
+q=document.location.search.substring(0);
+var ar=q.split('=');
+var a1=ar[0];
+var b1=ar[1];
+
+//var newstr = b1.replace(as, "%20");
+
+//var ed=b1.replace("+","_");
+var str2 = b1.replace(/[+]/g, '%20');
+//document.write(str2);
+var str1 = str2.replace(/%2F/g, '/');
+//document.write(str1);
+document.writeln('<iframe src='+str1+' width="1000" height="900px" id="ifram">');
+
+document.writeln('</iframe>');
+</script>
+</div>
+
+</div>
+</body>
+</html>
