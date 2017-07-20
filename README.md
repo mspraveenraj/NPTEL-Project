@@ -9,4 +9,3 @@ Technologies Used,
 3. MySql - for connecting database in the Xampp Environment.
 4. Apache - used to request/reply from/to client.
 5. HTML, CSS, JavaScript - for designing webpage
- 
